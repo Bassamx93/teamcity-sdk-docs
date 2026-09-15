@@ -39,7 +39,7 @@ public class SakuraUIPluginController {
 
 This piece of code does the following:	
 
-1\. It tells the TeamCity Core, that the plugin should be placed in `SAKURA_BEFORE_CONTENT` and `PlaceId.BEFORE_CONTENT`. To understand where those placeIds are - open your TeamCity instance with the `GET` parameter `pluginDevelopmentMode=true`. In our case, this is a [localhost instance](http://localhost:8111/bs/project/_Root?mode=builds&pluginDevelopmentMode=true).
+1. It tells the TeamCity Core, that the plugin should be placed in `SAKURA_BEFORE_CONTENT` and `PlaceId.BEFORE_CONTENT`. To understand where those placeIds are - open your TeamCity instance with the `GET` parameter `pluginDevelopmentMode=true`. In our case, this is a [localhost instance](http://localhost:8111/bs/project/_Root?mode=builds&pluginDevelopmentMode=true).
 
 
 The `PlaceID` in the Sakura UI:
@@ -50,15 +50,15 @@ The `PlaceID` in the Sakura UI:
 
 <img src="fe-extension-2.png" thumbnail-same-file="true" thumbnail="true" alt="Place ID in classic UI"/>
 
-2\. The UI plugin will be named as it is defined in the private constant `PLUGIN_NAME`.
+2. The UI plugin will be named as it is defined in the private constant `PLUGIN_NAME`.
 
-3\. This plugin uses `basic-plugin.jsp` as an entry point. Next time Plugin Wrapper will try to load your plugin, it will request `[server]/plugins/SakuraUI-Plugin/basic-plugin.jsp` as an entry point.
+3. This plugin uses `basic-plugin.jsp` as an entry point. Next time Plugin Wrapper will try to load your plugin, it will request `[server]/plugins/SakuraUI-Plugin/basic-plugin.jsp` as an entry point.
 
 ```html
  <div class="basic-plugin-wrapper">Here is a basic plugin.</    div>
 ```
 
-4\. This plugin should load `basic-plugin.css`:
+4. This plugin should load `basic-plugin.css`:
 
 ```css
  @keyframes rainbow {

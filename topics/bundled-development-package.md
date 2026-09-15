@@ -30,7 +30,7 @@ Note that sometimes a part of an agent-side plugin has to work in the same JVM w
 
 1. Unpack `<TeamCity Home Directory>\devPackage\samplePlugin-src.zip` into a directory of your choice.
 2. Edit the `build.properties` file and set the value for `path.variable.teamcitydistribution` property to the path of `<TeamCity Home Directory>`.
-3. Run `ant dist` in the plugin directory (Ant 1.7\+ is recommended). The plugin distribution should be created in the `dist` directory.
+3. Run `ant dist` in the plugin directory (Ant 1.7+ is recommended). The plugin distribution should be created in the `dist` directory.
 
 #### Building sample plugin in IntelliJ IDEA
 

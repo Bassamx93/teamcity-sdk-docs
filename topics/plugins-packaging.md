@@ -12,8 +12,8 @@ To write a TeamCity plugin, the knowledge of [Spring Framework](http://static.sp
 There are [server-side and agent-side](plugin-types-in-teamcity.md) plugins in TeamCity. Server-side and agent-side plugins are initialized in their own Spring containers; this means that every plugin needs a Spring bean definition file describing the main services of the plugin. Bean definition files are to be placed into the `META-INF` folder of the JAR archive containing the plugin classes.
 
 There is a convention for naming the definition file:
-* __build-server-plugin-&lt;plugin name&gt;__\*.xml — for server-side plugins
-* __build-agent-plugin-&lt;plugin name&gt;__\*.xml — for agent-side plugins, where the asterisk can be replaced with any text, for example: __build-server-plugin-cvs.xml__.
+* __build-server-plugin-&lt;plugin name&gt;__*.xml — for server-side plugins
+* __build-agent-plugin-&lt;plugin name&gt;__*.xml — for agent-side plugins, where the asterisk can be replaced with any text, for example: __build-server-plugin-cvs.xml__.
 
 <tip>
 

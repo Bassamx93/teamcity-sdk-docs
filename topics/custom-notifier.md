@@ -13,7 +13,7 @@ String value = user.getPropertyValue(new NotificatorPropertyKey(<notifier type>,
 
 
 
-Notifier can also provide custom UI for __Notifier rules__ and __My Settings&amp;Tools__ pages. See __PlaceId.NOTIFIER\_SETTINGS\_FRAGMENT__ and __PlaceId.MY\_SETTINGS\_NOTIFIER\_SECTION__.
+Notifier can also provide custom UI for __Notifier rules__ and __My Settings&amp;Tools__ pages. See `PlaceId.NOTIFIER_SETTINGS_FRAGMENT` and `PlaceId.MY_SETTINGS_NOTIFIER_SECTION`.
 
 Notifications are only delivered if there is at least one subscribed user for given event.
 

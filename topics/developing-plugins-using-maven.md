@@ -5,7 +5,7 @@ This article explains how to develop TeamCity plugins with Maven.
 
 ## Supported Maven versions
 
-Both Maven 2 (2.2.1\+) and Maven 3 (3.0.4\+) are supported.
+Both Maven 2 (2.2.1+) and Maven 3 (3.0.4+) are supported.
 
 ## Open API in Maven Repository
 
