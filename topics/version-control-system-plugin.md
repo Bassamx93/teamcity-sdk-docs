@@ -101,9 +101,9 @@ We want to monitor changes only in `module1` and `module2`. Therefore we've conf
 
 
 ```shell
-\+:module1
++:module1
 
-\+:module2
++:module2
 
 ```
 

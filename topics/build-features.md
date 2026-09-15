@@ -44,7 +44,7 @@ Build features can be enabled and disabled. The methods above always return all 
 
 ### Resolving Parameters
 
-Build features can have parameter references in their settings (for instance, `%\some.path%`), but methods like [`SBuildType#getBuildFeatures`](http://javadoc.jetbrains.net/teamcity/openapi/current/jetbrains/buildServer/serverSide/BuildTypeSettings.html#getBuildFeatures--) or [`SBuildType#getBuildFeaturesOfType`](http://javadoc.jetbrains.net/teamcity/openapi/current/jetbrains/buildServer/serverSide/BuildTypeSettings.html#getBuildFeaturesOfType-java.lang.String-) return build features with unresolved parameters. This is because build features parameters can depend on parameters from agents, and, in general, without an agent it is not clear how parameters resolution should be performed.
+Build features can have parameter references in their settings (for instance, `%some.path%`), but methods like [`SBuildType#getBuildFeatures`](http://javadoc.jetbrains.net/teamcity/openapi/current/jetbrains/buildServer/serverSide/BuildTypeSettings.html#getBuildFeatures--) or [`SBuildType#getBuildFeaturesOfType`](http://javadoc.jetbrains.net/teamcity/openapi/current/jetbrains/buildServer/serverSide/BuildTypeSettings.html#getBuildFeaturesOfType-java.lang.String-) return build features with unresolved parameters. This is because build features parameters can depend on parameters from agents, and, in general, without an agent it is not clear how parameters resolution should be performed.
 
 Still, it is possible to retrieve features with all parameters resolved by taking only the server-side parameters into account via [`SBuildType#getResolvedSettings`](http://javadoc.jetbrains.net/teamcity/openapi/current/jetbrains/buildServer/serverSide/ResolvedSettings.html).
 

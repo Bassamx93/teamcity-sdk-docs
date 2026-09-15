@@ -1,7 +1,7 @@
 [//]: # (title: Extending Highlighting for Web diff view)
 [//]: # (auxiliary-id: Extending+Highlighting+for+Web+diff+view.html)
 
-TeamCity uses [JHighlight](https://jhighlight.dev.java.net/) library to render the code on [Difference Viewer](https://www.jetbrains.com/help/teamcity/?difference-viewer) page. Essentially what JHighlight is doing is it takes plain source code, recognizes the language by extension, parses it, and in case of success renders the HTML output where the tokens are highlighted according to the specified settings. Unfortunately JHighlight supports relatively small subset of languages out-of-the-box (major ones like Java, C\+\+, XML, and several more). Here we'd like to present you a HOWTO on adding the support for more languages.
+TeamCity uses [JHighlight](https://jhighlight.dev.java.net/) library to render the code on [Difference Viewer](https://www.jetbrains.com/help/teamcity/?difference-viewer) page. Essentially what JHighlight is doing is it takes plain source code, recognizes the language by extension, parses it, and in case of success renders the HTML output where the tokens are highlighted according to the specified settings. Unfortunately JHighlight supports relatively small subset of languages out-of-the-box (major ones like Java, C++, XML, and several more). Here we'd like to present you a HOWTO on adding the support for more languages.
 
 
 

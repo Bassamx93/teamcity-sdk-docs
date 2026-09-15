@@ -97,7 +97,7 @@ Consider using some other approach. For instance, a plugin can obtain an Iterato
 {id="server-api-changes-1"}
 
 * Added `jetbrains.buildServer.serverSide.SProject#getPluginDataDirectory` that returns per-project plugin data directory
-* `jetbrains.buildServer.serverSide.BuildTypeSettings#addBuildRunner` not accepts `jetbrains.buildServer.serverSide.BuildRunnerDescriptor` instead of \*S\*BuildRunnerDescriptor
+* `jetbrains.buildServer.serverSide.BuildTypeSettings#addBuildRunner` now accepts `jetbrains.buildServer.serverSide.BuildRunnerDescriptor` instead of `SBuildRunnerDescriptor`
 * `jetbrains.buildServer.serverSide.TeamCityProperties` no longer contains static methods to compute TeamCity Data Directory. Use `jetbrains.buildServer.serverSide.ServerPaths` spring bean instead
 * `jetbrains.buildServer.serverSide.buildDistribution.AgentsFilterContext` now contains `getCustomData` and `setCustomData` methods. Agent filters can now store data there to be used during distribution/filtering process
 * added `jetbrains.buildServer.serverSide.buildDistribution.DefaultAgentsFilterContext`. Contains default implementation of custom data storage
